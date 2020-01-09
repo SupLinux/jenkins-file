@@ -1,0 +1,4 @@
+node {
+	echo "Hello"
+	sh "oc login ${OPENSHIFT_URL} -u ${USER} -p ${PASSWORD} -n ${PROJECT} --insecure-skip-tls-verify; oc get pods"
+}
